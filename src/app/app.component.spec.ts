@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-bootstrap'`, () => {
+  it(`should have as title 'luzhoulaojiao'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-bootstrap');
+    expect(app.title).toEqual('luzhoulaojiao');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-bootstrap!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to luzhoulaojiao!');
   });
 });

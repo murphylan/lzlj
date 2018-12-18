@@ -1,0 +1,38 @@
+<nav class="navbar navbar-dark bg-dark mb-5">
+  <div class="container d-flex justify-content-between">
+
+    <div id="collapseExample" [ngbCollapse]="isCollapsed" class="row">
+      <div class="col-sm-8 col-md-7 py-4">
+        <h4 class="text-white">公司介绍</h4>
+        <p class="text-muted">Add some information about the album below, the author, or any other background context.
+          Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some
+          social networking sites or contact information.</p>
+      </div>
+      <div class="col-sm-4 offset-md-1 py-4">
+        <h4 class="text-white">联系我们</h4>
+        <ul class="list-unstyled">
+          <li class="text-white">热线：13808651986</li>
+          <li class="text-white">地址：武汉市江汉区新华西路菱角湖万达A3写字楼1407室</li>
+          <li><a href="mail:to" class="text-white">邮箱</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <a class="navbar-brand" href="#">
+      <img src="http://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
+        alt="">
+      久鑫盛源贸易
+    </a>
+    <div class="navbar-expand mr-auto">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/wine">泸州老窖</a>
+        <a class="nav-item nav-link " href="/redwine">奔富红酒</a>
+        <a class="nav-item nav-link" href="/">酒品定制</a>
+      </div>
+    </div>
+    <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
