@@ -4,12 +4,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { Router, RouterModule,ActivatedRoute, ActivatedRouteSnapshot} from '@angular/router';
 
 @NgModule({
   declarations: [LayoutComponent, HeaderComponent, FooterComponent],
   imports: [
     NgbModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [LayoutComponent]
 })
