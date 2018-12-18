@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" [routerLink]="['/wine']">
       <img src="http://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
         alt="">
       久鑫盛源贸易
@@ -27,7 +27,7 @@
       <div class="navbar-nav">
         <a [routerLink]="['/wine']" class="nav-item nav-link active">泸州老窖</a>
         <a [routerLink]="['/redwine']" class="nav-item nav-link ">奔富红酒</a>
-        <a class="nav-item nav-link" href="/">酒品定制</a>
+        <a [routerLink]="['/wine']" class="nav-item nav-link">酒品定制</a>
       </div>
     </div>
     <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
