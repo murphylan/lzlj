@@ -9,8 +9,13 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class CarouselComponent implements OnInit {
 
-  images = [1, 2, 3, 4].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
-
+  // images = [1, 2, 3, 4].map(() => `https://picsum.photos/1200/500?random&t=${Math.random()}`);
+  images = [
+    "../../assets/images/banner.png",
+    `https://picsum.photos/1200/500?random&t=${Math.random()}`,
+    `https://picsum.photos/1200/500?random&t=${Math.random()}`,
+    `https://picsum.photos/1200/500?random&t=${Math.random()}`
+  ];
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
     config.interval = 10000;

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { WineComponent } from './wine/wine.component';
 import { RedwineComponent } from './redwine/redwine.component';
+import { CustomizationComponent } from './customization/customization.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
   }, {
     path: 'redwine',
     component: RedwineComponent
+  }, {
+    path: 'custom',
+    component: CustomizationComponent
   }
 ];
 

@@ -9,13 +9,15 @@ import { UiModule } from './ui/ui.module';
 import { CarouselComponent } from './carousel/carousel.component';
 import { RedwineComponent } from './redwine/redwine.component';
 import { WineComponent } from './wine/wine.component';
+import { CustomizationComponent } from './customization/customization.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarouselComponent,
     RedwineComponent,
-    WineComponent
+    WineComponent,
+    CustomizationComponent
   ],
   imports: [
     NgbModule,

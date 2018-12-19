@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark bg-dark mb-5">
+<nav class="navbar navbar-dark bg-dark mb-3">
   <div class="container d-flex justify-content-between">
 
     <div id="collapseExample" [ngbCollapse]="isCollapsed" class="row">
@@ -25,9 +25,9 @@
     </a>
     <div class="navbar-expand mr-auto">
       <div class="navbar-nav">
-        <a [routerLink]="['/wine']" class="nav-item nav-link active">泸州老窖</a>
-        <a [routerLink]="['/redwine']" class="nav-item nav-link ">奔富红酒</a>
-        <a [routerLink]="['/wine']" class="nav-item nav-link">酒品定制</a>
+        <a [routerLinkActive]="['active']" [routerLink]="['/wine']" class="nav-item nav-link">泸州老窖</a>
+        <a [routerLinkActive]="['active']" [routerLink]="['/redwine']" class="nav-item nav-link ">奔富红酒</a>
+        <a [routerLinkActive]="['active']" [routerLink]="['/custom']" class="nav-item nav-link">酒品定制</a>
       </div>
     </div>
     <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
