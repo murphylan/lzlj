@@ -1,19 +1,13 @@
-<section class="jumbotron text-center">
-  <div class="container">
-    <h1 class="jumbotron-heading">泸州老窖</h1>
-    <p class="lead text-muted">2016年，泸州老窖“大单品”战略实施之年，围绕“大单品”战略布局和品牌规划，泸州老窖特曲品牌的竞争优势和核心地位更加凸显。
-      “一体两翼”之梦恢弘展开:以[泸州老窖特曲.老字号]为主体，[泸州老窖特曲.纪念版]和[泸州老窖特曲.晶彩]为两翼的产品结构，清晰明确。
-      具有广泛品牌知名度和美誉度的泸州老窖特曲必将注入强劲动力，快速发展!
-    </p>
-    <p>
-      <button type="button" class="btn btn-primary my-2" placement="right" ngbPopover="13808651986" popoverTitle="敬请致电：">
-        订购热线
-      </button>
-    </p>
+<div class="card bg-dark text-white">
+  <img class="card-img" src="../../assets/images/wine_banner.jpg" alt="Card image">
+  <div class="card-img-overlay">
+    <h5 class="card-title"></h5>
+    <p class="card-text"></p>
+    <p class="card-text"></p>
   </div>
-</section>
+</div>
 
-<div class="album py-5 bg-light">
+<div class="album py-4 mb-4 bg-light">
   <div class="container">
 
     <div class="row" *ngIf="wines">
@@ -21,7 +15,7 @@
         <div class="card mb-4 shadow-sm">
           <img class="card-img-top" src="{{wine.image}}" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">{{wine.discription}}</p>
+            <p class="card-text text-secondary">{{wine.discription}}</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-secondary" placement="right" [ngbPopover]="popContent"
@@ -42,6 +36,6 @@
         </div>
       </div>
     </div>
-    
+
   </div>
 </div>

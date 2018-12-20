@@ -1,46 +1,41 @@
-<section class="jumbotron text-center">
-  <div class="container">
-    <h1 class="jumbotron-heading">奔富红酒</h1>
-    <p class="lead text-muted">奔富（Penfolds）是澳大利亚最著名，也是最大的葡萄酒庄，它被人们看作是澳大利亚红酒的象征，被称为澳大利亚葡萄酒业的贵族。
-        在澳大利亚，这是一个无人不知，无人不晓的品牌。奔富酒庄的发展史充满传奇，有人说，它其实是欧洲殖民者在澳大利亚开拓，发展，定居繁衍演变史的一个缩影。
-    </p>
-    <p>
-      <button type="button" class="btn btn-primary my-2" placement="right" ngbPopover="13808651986" popoverTitle="敬请致电：">
-        订购热线
-      </button>
-    </p>
+<div class="card bg-dark text-white">
+  <img class="card-img" src="../../assets/images/benfu_banner.jpg" alt="Card image">
+  <div class="card-img-overlay">
+    <h5 class="card-title"></h5>
+    <p class="card-text"></p>
+    <p class="card-text"></p>
   </div>
-</section>
+</div>
 
-<div class="album py-5 bg-light">
+<div class="album py-4 mb-4 bg-light">
   <div class="container">
 
-      <div class="row" *ngIf="wines">
-          <div class="col-md-4" *ngFor="let wine of wines; let i=index;">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="{{wine.image}}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">{{wine.discription}}</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" placement="right" [ngbPopover]="popContent"
-                      popoverTitle="链接官网：">
-                      详情
-                    </button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary" placement="right" ngbPopover="{{wine.phone}}"
-                      popoverTitle="敬请致电：">
-                      询价
-                    </button>
-                    <div style="width: 110px">
-                      <ng-template #popContent><a href="{{wine.link}}">泸州老窖</a></ng-template>
-                    </div>
-                  </div>
-                  <small class="text-muted">{{wine.others}}</small>
+    <div class="row" *ngIf="wines">
+      <div class="col-md-4" *ngFor="let wine of wines; let i=index;">
+        <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" src="{{wine.image}}" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text text-secondary">{{wine.discription}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary" placement="right" [ngbPopover]="popContent"
+                  popoverTitle="链接官网：">
+                  详情
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" placement="right" ngbPopover="{{wine.phone}}"
+                  popoverTitle="敬请致电：">
+                  询价
+                </button>
+                <div style="width: 110px">
+                  <ng-template #popContent><a href="{{wine.link}}">泸州老窖</a></ng-template>
                 </div>
               </div>
+              <small class="text-muted">{{wine.others}}</small>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
   </div>
 </div>
