@@ -15,7 +15,13 @@
         <div class="card mb-4 shadow-sm">
           <img class="card-img-top" src="{{wine.image}}" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text text-secondary">{{wine.discription}}</p>
+            <p class="card-text text-secondary">{{wine.discription[0]}}</p>
+            <p class="card-text text-secondary">
+              {{wine.name}}<br>
+              {{wine.specification}}<br>
+              {{wine.alcohol}} <br>
+              售价：{{wine.price}}元/瓶
+            </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-secondary" placement="right" [ngbPopover]="popContent"

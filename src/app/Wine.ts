@@ -3,8 +3,10 @@ export class Wine {
   name: string;
   image: string;
   price: number;
-  discription: string;
+  discription: string[];
   others: string;
   link: string;
   phone: string;
+  specification: string;
+  alcohol: string;
 }
